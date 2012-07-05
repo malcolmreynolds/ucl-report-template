@@ -1,0 +1,96 @@
+\documentclass{ucl_thesis}
+
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfigure}
+\usepackage{url}
+
+\usepackage{fancyvrb}
+\usepackage{auto-pst-pdf}
+\usepackage{com.braju.graphicalmodels}
+
+% \usepackage{hyperref}
+
+\title{EngD Second Year Report}
+\author{Malcolm Reynolds}
+\def \supervisor {Gabriel Brostow}
+
+
+
+% Custom commands
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\treeparent}[1]{\uparrow #1}
+\newcommand{\treechildren}[1]{\downarrow #1}
+\newcommand{\descendents}[1]{\Downarrow #1}
+\newcommand{\algref}[1]{(Alg \ref{#1})}
+\newcommand{\secref}[1]{\S\ref{#1}}
+\newcommand{\figref}[1]{Fig. \ref{#1}}
+\newcommand{\evalat}[2]{\left. #1 \right|_{#2}}
+\newcommand{\independent}{\perp}
+\newcommand{\given}{\,|\,}
+\newcommand{\eg}{e.g.\ }
+\newcommand{\ie}{i.e.\ }
+\newcommand{\etc}{etc.\ }
+\newcommand{\iid}{i.i.d.\ }
+\newcommand{\conv}{\otimes}
+\newcommand{\naive}{na\"ive}
+\newcommand{\naively}{na\"ively}
+\newcommand{\dd}{\, \mathrm{d}}
+\newcommand{\norm}[1]{\left| #1 \right|}
+\newcommand{\doubnorm}[1]{\left| \left| #1 \right| \right|}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+\newcommand{\etal}{\emph{et al}.}
+\setlength{\parindent}{10pt}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\degreeOperator}{deg}
+\DeclareMathOperator*{\weightOperator}{weight}
+
+%needed for PSTricks and com.braju.graphicalmodels
+\catcode`\@=11%
+\newcommand{\noOffset}{-1.5mm}
+
+\begin{document}
+    \bibliographystyle{abbrv}
+    \maketitle
+    \numberwithin{algorithm}{chapter}
+    \setcounter{page}{1}
+    \pagenumbering{roman}
+    \pagestyle{plain}
+    
+    % \newpage
+    %  \section*{Abstract}
+    %  \begin{par}
+    %      Abstract here
+    %  \end{par}
+    
+    % \newpage
+    % \section*{Acknowledgements}
+    % \begin{par}
+    %     Blah blah
+    % \end{par}
+    
+    \tableofcontents
+    \newpage
+    
+    
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+    \pagestyle{plain}
+    
+    \chapter{Introduction} % (fold)
+
+
+
+    \addcontentsline{toc}{chapter}{Bibliography}
+    
+    \bibliography{/Users/malc/phd/refs.bib}
+    
+\end{document}
+    
